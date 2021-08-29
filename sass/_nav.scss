@@ -7,7 +7,7 @@
     top: 0;
     left: 0;
     padding: 0 1.5rem;
-    background-color: $primaryColor;
+    background-color: rgb(153, 153, 153);
     z-index: 100;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -145,6 +145,7 @@
 
     &__item {
         margin: 2.5rem 0;
+        font-weight: bold;
 
         @media screen and (min-width: 769px) {
             margin: 0.25rem;

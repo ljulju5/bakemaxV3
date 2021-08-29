@@ -65,7 +65,7 @@
     padding-bottom: 2px;
     padding-top: 3.5rem;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 768px) and (orientation:portrait){
         position: fixed;
         top: 0;
         left: -100%;
@@ -73,6 +73,19 @@
         color: $white;
         width: 68%;
         height: 75vh;
+        padding: 1.5rem 0;
+        z-index: 100;
+        -webkit-transition: .5s;
+        transition: .5s;
+    }
+    @media screen and (max-width: 768px)  and (orientation:landscape){
+        position: fixed;
+        top: 0;
+        left: -100%;
+        background-color: $primaryColor;
+        color: $white;
+        width: 68%;
+        height: 80vh;
         padding: 1.5rem 0;
         z-index: 100;
         -webkit-transition: .5s;
@@ -147,8 +160,11 @@
         margin: 2.5rem 0;
         font-weight: bold;
 
-        @media screen and (min-width: 769px) {
+        @media screen and (min-width: 769px)  and (orientation:portrait){
             margin: 0.25rem;
+        }
+        @media screen and (max-width: 768px)  and (orientation:landscape){
+            margin: 1rem;
         }
     }
 

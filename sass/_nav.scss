@@ -22,14 +22,27 @@
         height: auto;
         background-color: transparent;
     }
+    .logoToggle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        .nav__img {
+            flex: 0 0 50%;
+        }
+        @media screen and (min-width: 769px) {
+            display: none;
+        }
+    }
 
     &__toggle {
+        flex: 0 0 20%;
         font-size: 1.5rem;
         color: $white;
         cursor: pointer;
-        position: relative;
-        left: 90%;
-        top: 25%;
+        //position: relative;
+        //left: 90%;
+        //top: 25%;
 
         @media screen and (min-width: 769px) {
             display: none;

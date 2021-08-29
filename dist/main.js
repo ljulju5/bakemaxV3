@@ -14,7 +14,12 @@ var nav = new SlideNav({
 const navMenu = document.getElementById('nav-menu'),
       toggleMenu = document.getElementById('nav-toggle'),
       closeMenu = document.getElementById('nav-close'),
-      closeMenuOutside = document.getElementById('aboutSection')
+      closeMenuAbout = document.getElementById('aboutSection'),
+      closeMenuTft = document.getElementById('tft'),
+      closeMenuPriprema = document.getElementById('priprema'),
+      closeMenuJufka = document.getElementById('superJufka'),
+      closeMenuKontakt = document.getElementById('kontakt')
+     
 
 /*SHOW*/ 
 toggleMenu.addEventListener('click', ()=>{
@@ -26,7 +31,20 @@ closeMenu.addEventListener('click', ()=>{
     navMenu.classList.remove('show')
 })
 
-closeMenuOutside.addEventListener('click', ()=>{
+closeMenuAbout.addEventListener('click', ()=>{
+    navMenu.classList.remove('show')
+})
+closeMenuTft.addEventListener('click', ()=>{
+    navMenu.classList.remove('show')
+})
+closeMenuPriprema.addEventListener('click', ()=>{
+    navMenu.classList.remove('show')
+})
+closeMenuJufka.addEventListener('click', ()=>{
+    navMenu.classList.remove('show')
+})
+
+closeMenuKontakt.addEventListener('click', ()=>{
     navMenu.classList.remove('show')
 })
 

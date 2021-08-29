@@ -24,13 +24,25 @@
     background-color: transparent;
   }
 }
+.header .logoToggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.header .logoToggle .nav__img {
+  flex: 0 0 50%;
+}
+@media screen and (min-width: 769px) {
+  .header .logoToggle {
+    display: none;
+  }
+}
 .header__toggle {
+  flex: 0 0 20%;
   font-size: 1.5rem;
   color: #fff;
   cursor: pointer;
-  position: relative;
-  left: 90%;
-  top: 25%;
 }
 @media screen and (min-width: 769px) {
   .header__toggle {

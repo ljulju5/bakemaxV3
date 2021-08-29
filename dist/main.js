@@ -13,7 +13,8 @@ var nav = new SlideNav({
 /*===== MENU SHOW Y HIDDEN =====*/ 
 const navMenu = document.getElementById('nav-menu'),
       toggleMenu = document.getElementById('nav-toggle'),
-      closeMenu = document.getElementById('nav-close')
+      closeMenu = document.getElementById('nav-close'),
+      closeMenuOutside = document.getElementById('aboutSection')
 
 /*SHOW*/ 
 toggleMenu.addEventListener('click', ()=>{
@@ -22,6 +23,10 @@ toggleMenu.addEventListener('click', ()=>{
 
 /*HIDDEN*/
 closeMenu.addEventListener('click', ()=>{
+    navMenu.classList.remove('show')
+})
+
+closeMenuOutside.addEventListener('click', ()=>{
     navMenu.classList.remove('show')
 })
 
@@ -38,6 +43,15 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
+// close on click outside menu
+// window.addEventListener('click', function(e){
+//     if (!document.getElementById('nav-menu').contains(e.target)){
+//     alert("Clicked outside l2 and logo-menu");
+//     navMenu.classList.remove('show') 
+//     //document.getElementById('nav-menu').style.height="0px"; //the same code you've used to hide the menu
+//   } 
+// })
+
 // Add white backgroud to fixed nav on scroll
 var onScroll = document.getElementById('on-scroll');
 window.onscroll = function () { 
@@ -49,3 +63,4 @@ window.onscroll = function () {
         onScroll.classList.remove("header-scrolled");
     }
 };
+

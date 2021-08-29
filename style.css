@@ -300,10 +300,19 @@ o nama
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (orientation: portrait) {
   .about {
     position: relative;
     height: 90vh;
+    margin-bottom: 0;
+    background-image: url(images/bgrAboutMobile.png);
+    background-attachment: scroll;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .about {
+    position: relative;
+    height: 130vh;
     margin-bottom: 0;
     background-image: url(images/bgrAboutMobile.png);
     background-attachment: scroll;
@@ -355,10 +364,19 @@ o nama
     padding: 5px 10px;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
   .about .container .aboutText {
     font-size: 0.8rem;
     height: 90vh;
+    padding: 30px 10px;
+    left: 0;
+    right: 0;
+  }
+}
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+  .about .container .aboutText {
+    font-size: 0.8rem;
+    height: 130vh;
     padding: 30px 10px;
     left: 0;
     right: 0;
@@ -576,11 +594,18 @@ Time for taste
   color: #4a4a4d;
   padding-top: 9rem;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (orientation: portrait) {
   .tft {
     margin-top: 0;
     padding-top: 7rem;
     height: 185vh;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .tft {
+    margin-top: 0;
+    padding-top: 7rem;
+    height: 245vh;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1540px) {

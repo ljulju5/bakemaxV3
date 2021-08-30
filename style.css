@@ -326,7 +326,7 @@ o nama
     position: relative;
     height: 90vh;
     margin-bottom: 0;
-    background-image: url(images/bgrAboutMobile.png);
+    background-image: url(images/bgrAboutMobile1.png);
     background-attachment: scroll;
   }
 }
@@ -335,7 +335,7 @@ o nama
     position: relative;
     height: 130vh;
     margin-bottom: 0;
-    background-image: url(images/bgrAboutMobile.png);
+    background-image: url(images/bgrAboutMobile1.png);
     background-attachment: scroll;
   }
 }
@@ -605,7 +605,7 @@ priprema
 Time for taste
 **************/
 .tft {
-  background-image: linear-gradient(rgba(236, 235, 235, 0.8), rgba(245, 241, 241, 0.8)), url(images/bgrTesto.jpg);
+  background-image: linear-gradient(rgba(236, 235, 235, 0.8), rgba(245, 241, 241, 0.8)), url(images/bgrTesto1.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

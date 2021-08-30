@@ -20,7 +20,7 @@
 }
 @media screen and (min-width: 769px) {
   .header {
-    height: auto;
+    height: 0;
     background-color: transparent;
   }
 }
@@ -53,6 +53,7 @@
 @media screen and (min-width: 769px) {
   .header-scrolled {
     background-color: #fff;
+    height: 8.75rem;
   }
 }
 .header-transparent {
@@ -138,7 +139,7 @@
   padding: 0;
 }
 .nav__img img {
-  width: 280px;
+  width: 240px;
 }
 @media only screen and (max-width: 768px) {
   .nav__img img {

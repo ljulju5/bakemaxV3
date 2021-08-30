@@ -74,7 +74,7 @@ navLink.forEach(n => n.addEventListener('click', linkAction));
 var onScroll = document.getElementById('on-scroll');
 window.onscroll = function () { 
     "use strict";
-    if (document.documentElement.scrollTop >= 8 ) {
+    if (document.documentElement.scrollTop >= 2 ) {
         onScroll.classList.add("header-scrolled");
     } 
     else {

@@ -67,10 +67,10 @@ o nama
     height: 70vh;
     text-align: center;
     position: absolute;
-    margin-bottom: 120px;  
+    //margin-bottom: 120px;
     // background-image: linear-gradient(rgba(236, 235, 235, 0.5), rgba(245, 241, 241, 0.5)),
     // url(images/bgrAbout.png);
-    background-image: url(images/bgrAbout.png);
+    background-image: url(images/bgrAboutS.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -80,7 +80,7 @@ o nama
         position: relative;
         height: 90vh;
         margin-bottom: 0;
-        background-image: url(images/bgrAboutMobile1.png);
+        background-image: url(images/bgrAboutMobile.jpg);
         background-attachment: scroll;
     }
 
@@ -88,13 +88,17 @@ o nama
         position: relative;
         height: 130vh;
         margin-bottom: 0;
-        background-image: url(images/bgrAboutMobile1.png);
+        background-image: url(images/bgrAboutMobile.jpg);
         background-attachment: scroll;
     }
 
     @media screen and (min-width: 769px) and (max-width: 1540px) {
         position: relative;
         height: 640px;
+    }
+
+    @media screen and (min-width: 1541px) {
+        position: relative;
     }
 
     .container {
@@ -106,24 +110,25 @@ o nama
 
 
         @media screen and (min-width: 769px) {
-           // left: 15%;
-          // right: 85%;
+            // left: 15%;
+            // right: 85%;
         }
 
         h2 {
             color: $white;
             font-size: 2rem;
             margin-bottom: 35px;
+
             @media screen and (max-width: 768px) {
                 padding-top: 100px;
-             }
+            }
         }
 
         .aboutText {
             height: 70vh;
             flex: 0 0 65%;
             display: block;
-            padding: 100px 40px 60px 180px;
+            padding: 100px 100px 60px 120px;
             margin-bottom: 15px;
             background: rgba(128, 128, 128, 0.7);
             color: $primaryColor;
@@ -145,6 +150,7 @@ o nama
                 left: 0;
                 right: 0;
             }
+
             @media only screen and (max-width:768px) and (orientation:landscape) {
                 font-size: .8rem;
                 height: 130vh;
@@ -187,10 +193,12 @@ superJufka
             margin-top: 4rem;
             text-align: center;
             font-size: 2rem;
+
             @media only screen and (max-width:768px) {
                 font-size: 1.8rem;
             }
         }
+
         .tftText {
             font-family: $fontTFT;
             font-size: 2rem;
@@ -210,22 +218,26 @@ superJufka
             justify-content: space-between;
             align-items: flex-start;
             padding-top: 2rem;
+
             .tftBenefits {
                 flex: 0 0 28%;
                 border-radius: 10px;
                 height: 260px;
                 box-shadow: 2px 1px 1px 2px #4a4a4d;
                 padding: 35px 22px;
+
                 @media only screen and (max-width:768px) {
                     flex: 0 0 100%;
                     margin-bottom: 2rem;
                     font-size: .9rem;
                     padding: 30px 20px 0px 30px;
                 }
+
                 i {
                     color: $logoColor;
                     font-size: 1rem;
                 }
+
                 li {
                     @media only screen and (max-width:768px) {
                         margin-bottom: 5px;
@@ -235,6 +247,7 @@ superJufka
 
             .text {
                 flex: 0 0 40%;
+
                 @media only screen and (max-width:768px) {
                     flex: 0 0 100%;
                     margin-bottom: 2rem;
@@ -243,6 +256,7 @@ superJufka
 
             .tftImg {
                 flex: 0 0 28%;
+
                 @media only screen and (max-width:768px) {
                     flex: 0 0 100%;
                 }
@@ -264,11 +278,12 @@ priprema
     padding: 1rem 0 4rem 0;
     scroll-behavior: smooth;
     background-image: linear-gradient(rgba(236, 235, 235, 0.8), rgba(245, 241, 241, 0.8)),
-        url(images/bgrTFT.jpg);
+        url(images/bgrTFT1.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+
     .text-wr {
         @media only screen and (max-width:768px) {
             width: 80%;
@@ -282,17 +297,20 @@ priprema
         margin-bottom: 2rem;
         color: $primaryColor;
         padding-top: 8rem;
+
         @media only screen and (max-width:768px) {
             font-size: 1.8rem;
             padding-top: 6rem;
         }
     }
+
     h5 {
         text-align: center;
         font-size: 1.7rem;
         margin-bottom: 4rem;
         color: $primaryColor;
         font-family: $fontTFT;
+
         @media only screen and (max-width:768px) {
             font-size: 1.4rem;
         }
@@ -301,6 +319,7 @@ priprema
     .video {
         display: flex;
         justify-content: center;
+
         iframe {
             @media only screen and (max-width:768px) {
                 height: 300px;
@@ -312,6 +331,7 @@ priprema
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+
         @media only screen and (max-width:768px) {
             width: 100%;
         }
@@ -323,12 +343,14 @@ priprema
             border: 1px solid rgba(0, 0, 0, .125);
             border-radius: 3%;
             padding: 2rem;
+
             @media only screen and (max-width:768px) {
                 flex: 0 0 100%;
             }
 
             h2 {
                 margin-bottom: 2rem;
+
                 @media only screen and (max-width:768px) {
                     font-size: 1.1rem;
                 }
@@ -337,6 +359,7 @@ priprema
             p {
                 margin-bottom: 2rem;
                 text-align: justify;
+
                 @media only screen and (max-width:768px) {
                     font-size: 1rem;
                 }
@@ -345,8 +368,10 @@ priprema
             img {
                 width: 70%;
                 border-radius: 10px;
+
                 @media only screen and (max-width:768px) {
-                    width: 100%;;
+                    width: 100%;
+                    ;
                 }
             }
 
@@ -360,13 +385,13 @@ Time for taste
 
 .tft {
     background-image: linear-gradient(rgba(236, 235, 235, 0.8), rgba(245, 241, 241, 0.8)),
-        url(images/bgrTesto1.jpg);
+        url(images/bgrTesto2.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    margin-top: 600px;
-    height: 60vh;
+    //margin-top: 600px;
+    height: 80vh;
     color: $primaryColor;
     padding-top: 9rem;
 
@@ -390,6 +415,7 @@ Time for taste
     .imgHeading {
         width: 20%;
         margin: 0 auto;
+
         @media screen and (max-width: 768px) {
             width: 60%;
         }
@@ -400,6 +426,7 @@ Time for taste
         margin-bottom: 30px;
         font-size: 2rem;
         margin-top: 40px;
+
         @media screen and (max-width: 768px) {
             font-size: 1.8rem;
         }
@@ -408,6 +435,7 @@ Time for taste
     p {
         text-align: justify;
         font-size: 1.3rem;
+
         @media screen and (max-width: 768px) {
             font-size: 1.1rem;
         }
@@ -429,6 +457,7 @@ footer {
 
         article:nth-child(1) {
             flex: 0 0 15%;
+
             @media only screen and (max-width:768px) {
                 flex: 0 0 35%;
                 margin-bottom: 2rem;
@@ -437,6 +466,7 @@ footer {
 
         article:nth-child(2) {
             flex: 0 0 20%;
+
             @media only screen and (max-width:768px) {
                 flex: 0 0 45%;
                 margin-bottom: 2rem;
@@ -445,6 +475,7 @@ footer {
 
         article:nth-child(3) {
             flex: 0 0 20%;
+
             @media only screen and (max-width:768px) {
                 flex: 0 0 45%;
             }
@@ -452,6 +483,7 @@ footer {
 
         article:nth-child(4) {
             flex: 0 0 15%;
+
             @media only screen and (max-width:768px) {
                 flex: 0 0 35%;
             }
@@ -468,24 +500,27 @@ footer {
             h4 {
                 font-size: 1.6rem;
                 font-family: 'fontFamily';
+
                 @media only screen and (max-width:768px) {
                     font-size: 1.3rem;
                 }
             }
-    
+
             i {
                 margin: 30px;
+
                 @media only screen and (max-width:768px) {
                     margin: 10px;
                 }
-    
+
                 a {
                     color: $white;
                     font-size: 1.1rem;
+
                     @media only screen and (max-width:768px) {
                         font-size: 1rem;
                     }
-    
+
                     &:hover {
                         color: $secondaryColor;
                         transition: $transition;
@@ -493,11 +528,12 @@ footer {
                 }
             }
         }
+
         .copy {
             @media only screen and (max-width:768px) {
                 margin-top: 30px;
                 font-size: .8rem;
             }
         }
-    } 
+    }
 }

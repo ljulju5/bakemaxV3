@@ -2,7 +2,7 @@
 
 .header {
     width: 100%;
-    height: 5rem; 
+    height: 5rem;
     position: fixed;
     top: 0;
     left: 0;
@@ -22,14 +22,17 @@
         height: 0;
         background-color: transparent;
     }
+
     .logoToggle {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
+
         .nav__img {
             flex: 0 0 50%;
         }
+
         @media screen and (min-width: 769px) {
             display: none;
         }
@@ -66,7 +69,7 @@
     padding-bottom: 2px;
     padding-top: 3.5rem;
 
-    @media screen and (max-width: 768px) and (orientation:portrait){
+    @media screen and (max-width: 768px) and (orientation:portrait) {
         position: fixed;
         top: 0;
         left: -100%;
@@ -79,7 +82,8 @@
         -webkit-transition: .5s;
         transition: .5s;
     }
-    @media screen and (max-width: 768px)  and (orientation:landscape){
+
+    @media screen and (max-width: 768px) and (orientation:landscape) {
         position: fixed;
         top: 0;
         left: -100%;
@@ -106,10 +110,12 @@
     &__list {
         i {
             color: $secondaryColor;
+
             i {
-                font-size: .8rem;                
+                font-size: .8rem;
             }
         }
+
         @media screen and (min-width: 769px) {
             display: -webkit-box;
             display: -ms-flexbox;
@@ -135,12 +141,15 @@
         -ms-flex-pack: center;
         justify-content: center;
         overflow: hidden;
+
         a {
             margin: 0;
             padding: 0;
         }
+
         img {
             width: 240px;
+
             @media only screen and (max-width:768px) {
                 width: 130px;
             }
@@ -161,10 +170,11 @@
         margin: 2.5rem 0;
         font-weight: bold;
 
-        @media screen and (min-width: 769px)  and (orientation:portrait){
+        @media screen and (min-width: 769px) and (orientation:portrait) {
             margin: 0.25rem;
         }
-        @media screen and (max-width: 768px)  and (orientation:landscape){
+
+        @media screen and (max-width: 768px) and (orientation:landscape) {
             margin: 1rem;
         }
     }
@@ -223,8 +233,8 @@
         margin: 1rem;
         transform: translateY(.5rem);
 
-        @media(min-width:1740px) {
-            width: 22%;
+        @media(min-width:1541px) {
+            width: 27%;
         }
 
         @media(max-width:1540px) {
